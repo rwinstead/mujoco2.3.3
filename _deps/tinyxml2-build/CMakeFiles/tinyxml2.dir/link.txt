@@ -1,0 +1,2 @@
+/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emar qc ../../lib/libtinyxml2.a CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o
+/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emranlib ../../lib/libtinyxml2.a

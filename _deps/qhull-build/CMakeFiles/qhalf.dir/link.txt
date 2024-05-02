@@ -1,0 +1,1 @@
+/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc -O3 -DNDEBUG @CMakeFiles/qhalf.dir/objects1.rsp -o ../../bin/qhalf.js @CMakeFiles/qhalf.dir/linkLibs.rsp

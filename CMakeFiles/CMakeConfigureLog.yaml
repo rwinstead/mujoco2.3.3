@@ -1,0 +1,423 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:29 (project)"
+    message: |
+      The target system is: Emscripten - 1 - x86
+      The host system is: Darwin - 23.2.0 - x86_64
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake/CheckAvxSupport.cmake:34 (check_c_source_compiles)"
+      - "cmake/MujocoOptions.cmake:76 (get_avx_compile_options)"
+      - "CMakeLists.txt:51 (include)"
+    checks:
+      - "Performing Test CAN_BUILD_AVX"
+    directories:
+      source: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-Y5y7Zf"
+      binary: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-Y5y7Zf"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/mujoco-2.3.3/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CAN_BUILD_AVX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-Y5y7Zf'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.29.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d82b5/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d82b5.dir/build.make CMakeFiles/cmTC_d82b5.dir/build
+        Building C object CMakeFiles/cmTC_d82b5.dir/src.c.o
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc -DCAN_BUILD_AVX  -mavx -std=c11 -fPIE -MD -MT CMakeFiles/cmTC_d82b5.dir/src.c.o -MF CMakeFiles/cmTC_d82b5.dir/src.c.o.d -o CMakeFiles/cmTC_d82b5.dir/src.c.o -c /Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-Y5y7Zf/src.c
+        emcc: error: Passing any of -msse, -msse2, -msse3, -mssse3, -msse4.1, -msse4.2, -mavx, -mfpu=neon flags also requires passing -msimd128!
+        make[1]: *** [CMakeFiles/cmTC_d82b5.dir/src.c.o] Error 1
+        make: *** [cmTC_d82b5/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake/MujocoLinkOptions.cmake:38 (check_c_source_compiles)"
+      - "cmake/MujocoOptions.cmake:85 (get_mujoco_extra_link_options)"
+      - "CMakeLists.txt:51 (include)"
+    checks:
+      - "Performing Test SUPPORTS_LLD"
+    directories:
+      source: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-e0Ih1W"
+      binary: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-e0Ih1W"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/mujoco-2.3.3/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "SUPPORTS_LLD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-e0Ih1W'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.29.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1658e/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_1658e.dir/build.make CMakeFiles/cmTC_1658e.dir/build
+        Building C object CMakeFiles/cmTC_1658e.dir/src.c.o
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc -DSUPPORTS_LLD  -fuse-ld=lld -std=c11 -fPIE -MD -MT CMakeFiles/cmTC_1658e.dir/src.c.o -MF CMakeFiles/cmTC_1658e.dir/src.c.o.d -o CMakeFiles/cmTC_1658e.dir/src.c.o -c /Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-e0Ih1W/src.c
+        clang-15: warning: argument unused during compilation: '-fuse-ld=lld' [-Wunused-command-line-argument]
+        Linking C executable cmTC_1658e.js
+        /usr/local/Cellar/cmake/3.29.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1658e.dir/link.txt --verbose=1
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc  -fuse-ld=lld @CMakeFiles/cmTC_1658e.dir/objects1.rsp -o cmTC_1658e.js
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake/MujocoLinkOptions.cmake:50 (check_c_source_compiles)"
+      - "cmake/MujocoOptions.cmake:85 (get_mujoco_extra_link_options)"
+      - "CMakeLists.txt:51 (include)"
+    checks:
+      - "Performing Test SUPPORTS_GC_SECTIONS"
+    directories:
+      source: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-W30T7G"
+      binary: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-W30T7G"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/mujoco-2.3.3/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "SUPPORTS_GC_SECTIONS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-W30T7G'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.29.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d7746/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d7746.dir/build.make CMakeFiles/cmTC_d7746.dir/build
+        Building C object CMakeFiles/cmTC_d7746.dir/src.c.o
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc -DSUPPORTS_GC_SECTIONS  -fuse-ld=lld -std=c11 -fPIE -MD -MT CMakeFiles/cmTC_d7746.dir/src.c.o -MF CMakeFiles/cmTC_d7746.dir/src.c.o.d -o CMakeFiles/cmTC_d7746.dir/src.c.o -c /Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-W30T7G/src.c
+        clang-15: warning: argument unused during compilation: '-fuse-ld=lld' [-Wunused-command-line-argument]
+        Linking C executable cmTC_d7746.js
+        /usr/local/Cellar/cmake/3.29.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7746.dir/link.txt --verbose=1
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc  -fuse-ld=lld @CMakeFiles/cmTC_d7746.dir/objects1.rsp -o cmTC_d7746.js
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "build/_deps/qhull-src/build/CMakeModules/CheckLFS.cmake:19 (check_include_file)"
+      - "build/_deps/qhull-src/CMakeLists.txt:102 (check_lfs)"
+    checks:
+      - "Looking for sys/types.h"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `qhull`"
+    directories:
+      source: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-f9PGPC"
+      binary: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-f9PGPC"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/mujoco-2.3.3/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-f9PGPC'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.29.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b14ce/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b14ce.dir/build.make CMakeFiles/cmTC_b14ce.dir/build
+        Building C object CMakeFiles/cmTC_b14ce.dir/CheckIncludeFile.c.o
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fPIE -MD -MT CMakeFiles/cmTC_b14ce.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_b14ce.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_b14ce.dir/CheckIncludeFile.c.o -c /Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-f9PGPC/CheckIncludeFile.c
+        Linking C executable cmTC_b14ce.js
+        /usr/local/Cellar/cmake/3.29.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b14ce.dir/link.txt --verbose=1
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc @CMakeFiles/cmTC_b14ce.dir/objects1.rsp -o cmTC_b14ce.js
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "build/_deps/qhull-src/build/CMakeModules/CheckLFS.cmake:20 (check_include_file)"
+      - "build/_deps/qhull-src/CMakeLists.txt:102 (check_lfs)"
+    checks:
+      - "Looking for inttypes.h"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `qhull`"
+    directories:
+      source: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-YvWmGz"
+      binary: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-YvWmGz"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/mujoco-2.3.3/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-YvWmGz'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.29.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_25033/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_25033.dir/build.make CMakeFiles/cmTC_25033.dir/build
+        Building C object CMakeFiles/cmTC_25033.dir/CheckIncludeFile.c.o
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fPIE -MD -MT CMakeFiles/cmTC_25033.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_25033.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_25033.dir/CheckIncludeFile.c.o -c /Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-YvWmGz/CheckIncludeFile.c
+        Linking C executable cmTC_25033.js
+        /usr/local/Cellar/cmake/3.29.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25033.dir/link.txt --verbose=1
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc @CMakeFiles/cmTC_25033.dir/objects1.rsp -o cmTC_25033.js
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "build/_deps/qhull-src/build/CMakeModules/CheckLFS.cmake:21 (check_include_file)"
+      - "build/_deps/qhull-src/CMakeLists.txt:102 (check_lfs)"
+    checks:
+      - "Looking for stddef.h"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `qhull`"
+    directories:
+      source: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-rzKeHv"
+      binary: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-rzKeHv"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/mujoco-2.3.3/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-rzKeHv'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.29.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5a5ed/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5a5ed.dir/build.make CMakeFiles/cmTC_5a5ed.dir/build
+        Building C object CMakeFiles/cmTC_5a5ed.dir/CheckIncludeFile.c.o
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fPIE -MD -MT CMakeFiles/cmTC_5a5ed.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_5a5ed.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_5a5ed.dir/CheckIncludeFile.c.o -c /Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-rzKeHv/CheckIncludeFile.c
+        Linking C executable cmTC_5a5ed.js
+        /usr/local/Cellar/cmake/3.29.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a5ed.dir/link.txt --verbose=1
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc @CMakeFiles/cmTC_5a5ed.dir/objects1.rsp -o cmTC_5a5ed.js
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "build/_deps/qhull-src/build/CMakeModules/CheckLFS.cmake:22 (check_include_file)"
+      - "build/_deps/qhull-src/CMakeLists.txt:102 (check_lfs)"
+    checks:
+      - "Looking for stdint.h"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `qhull`"
+    directories:
+      source: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-51lKbW"
+      binary: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-51lKbW"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/mujoco-2.3.3/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-51lKbW'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.29.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e465e/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e465e.dir/build.make CMakeFiles/cmTC_e465e.dir/build
+        Building C object CMakeFiles/cmTC_e465e.dir/CheckIncludeFile.c.o
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fPIE -MD -MT CMakeFiles/cmTC_e465e.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_e465e.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_e465e.dir/CheckIncludeFile.c.o -c /Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-51lKbW/CheckIncludeFile.c
+        Linking C executable cmTC_e465e.js
+        /usr/local/Cellar/cmake/3.29.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e465e.dir/link.txt --verbose=1
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc @CMakeFiles/cmTC_e465e.dir/objects1.rsp -o cmTC_e465e.js
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules/CheckTypeSize.cmake:124 (try_run)"
+      - "/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules/CheckTypeSize.cmake:207 (__check_type_size_impl)"
+      - "build/_deps/qhull-src/build/CMakeModules/CheckLFS.cmake:25 (check_type_size)"
+      - "build/_deps/qhull-src/CMakeLists.txt:102 (check_lfs)"
+    checks:
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `qhull`"
+    directories:
+      source: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/mujoco-2.3.3/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SIZEOF_OFF_T"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.29.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d11b1/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d11b1.dir/build.make CMakeFiles/cmTC_d11b1.dir/build
+        Building C object CMakeFiles/cmTC_d11b1.dir/SIZEOF_OFF_T.c.o
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fPIE -MD -MT CMakeFiles/cmTC_d11b1.dir/SIZEOF_OFF_T.c.o -MF CMakeFiles/cmTC_d11b1.dir/SIZEOF_OFF_T.c.o.d -o CMakeFiles/cmTC_d11b1.dir/SIZEOF_OFF_T.c.o -c /Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CheckTypeSize/SIZEOF_OFF_T.c
+        Linking C executable cmTC_d11b1.js
+        /usr/local/Cellar/cmake/3.29.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d11b1.dir/link.txt --verbose=1
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc @CMakeFiles/cmTC_d11b1.dir/objects1.rsp -o cmTC_d11b1.js
+        
+      exitCode: 0
+    runResult:
+      variable: "SIZEOF_OFF_T_run_result"
+      cached: true
+      stdout: |
+      exitCode: 8
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/qhull-src/build/CMakeModules/CheckLFS.cmake:27 (check_symbol_exists)"
+      - "build/_deps/qhull-src/CMakeLists.txt:102 (check_lfs)"
+    checks:
+      - "Looking for fseeko"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `qhull`"
+    directories:
+      source: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-8tqtPB"
+      binary: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-8tqtPB"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/mujoco-2.3.3/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_FSEEKO"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-8tqtPB'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.29.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cd990/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_cd990.dir/build.make CMakeFiles/cmTC_cd990.dir/build
+        Building C object CMakeFiles/cmTC_cd990.dir/CheckSymbolExists.c.o
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fPIE -MD -MT CMakeFiles/cmTC_cd990.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_cd990.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_cd990.dir/CheckSymbolExists.c.o -c /Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-8tqtPB/CheckSymbolExists.c
+        Linking C executable cmTC_cd990.js
+        /usr/local/Cellar/cmake/3.29.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd990.dir/link.txt --verbose=1
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc @CMakeFiles/cmTC_cd990.dir/objects1.rsp -o cmTC_cd990.js
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/qhull-src/build/CMakeModules/CheckLFS.cmake:28 (check_symbol_exists)"
+      - "build/_deps/qhull-src/CMakeLists.txt:102 (check_lfs)"
+    checks:
+      - "Looking for ftello"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `qhull`"
+    directories:
+      source: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-jXWy98"
+      binary: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-jXWy98"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/mujoco-2.3.3/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_FTELLO"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-jXWy98'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.29.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_db371/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_db371.dir/build.make CMakeFiles/cmTC_db371.dir/build
+        Building C object CMakeFiles/cmTC_db371.dir/CheckSymbolExists.c.o
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fPIE -MD -MT CMakeFiles/cmTC_db371.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_db371.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_db371.dir/CheckSymbolExists.c.o -c /Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-jXWy98/CheckSymbolExists.c
+        Linking C executable cmTC_db371.js
+        /usr/local/Cellar/cmake/3.29.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db371.dir/link.txt --verbose=1
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc @CMakeFiles/cmTC_db371.dir/objects1.rsp -o cmTC_db371.js
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/qhull-src/build/CMakeModules/CheckLFS.cmake:34 (check_symbol_exists)"
+      - "build/_deps/qhull-src/CMakeLists.txt:102 (check_lfs)"
+    checks:
+      - "Looking for PRIdMAX"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `qhull`"
+    directories:
+      source: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-xlJnYa"
+      binary: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-xlJnYa"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/mujoco-2.3.3/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_PRIDMAX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-xlJnYa'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.29.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_be038/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_be038.dir/build.make CMakeFiles/cmTC_be038.dir/build
+        Building C object CMakeFiles/cmTC_be038.dir/CheckSymbolExists.c.o
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fPIE -MD -MT CMakeFiles/cmTC_be038.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_be038.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_be038.dir/CheckSymbolExists.c.o -c /Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-xlJnYa/CheckSymbolExists.c
+        Linking C executable cmTC_be038.js
+        /usr/local/Cellar/cmake/3.29.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be038.dir/link.txt --verbose=1
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc @CMakeFiles/cmTC_be038.dir/objects1.rsp -o cmTC_be038.js
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/Cellar/cmake/3.29.2/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "build/_deps/ccd-src/src/CMakeLists.txt:75 (check_cxx_compiler_flag)"
+      - "build/_deps/ccd-src/src/CMakeLists.txt:79 (check_compiler_visibility)"
+    checks:
+      - "Performing Test COMPILER_SUPPORTS_VISIBILITY"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `ccd`"
+    directories:
+      source: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-jQnF7B"
+      binary: "/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-jQnF7B"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/cmake/Modules;/Users/ryanwinstead/Projects/mujoco-2.3.3/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_SUPPORTS_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-jQnF7B'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.29.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fb0f3/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_fb0f3.dir/build.make CMakeFiles/cmTC_fb0f3.dir/build
+        Building CXX object CMakeFiles/cmTC_fb0f3.dir/src.cxx.o
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/em++ -DCOMPILER_SUPPORTS_VISIBILITY  -std=c++17 -fPIE   -fvisibility=hidden -MD -MT CMakeFiles/cmTC_fb0f3.dir/src.cxx.o -MF CMakeFiles/cmTC_fb0f3.dir/src.cxx.o.d -o CMakeFiles/cmTC_fb0f3.dir/src.cxx.o -c /Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeScratch/TryCompile-jQnF7B/src.cxx
+        Linking CXX executable cmTC_fb0f3.js
+        /usr/local/Cellar/cmake/3.29.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb0f3.dir/link.txt --verbose=1
+        /Users/ryanwinstead/Projects/emsdk/upstream/emscripten/em++ @CMakeFiles/cmTC_fb0f3.dir/objects1.rsp -o cmTC_fb0f3.js
+        
+      exitCode: 0
+...

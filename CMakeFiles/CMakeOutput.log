@@ -1,0 +1,13 @@
+Determining size of off_t passed with the following output:
+Change Dir: '/Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/local/Cellar/cmake/3.29.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d11b1/fast
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d11b1.dir/build.make CMakeFiles/cmTC_d11b1.dir/build
+Building C object CMakeFiles/cmTC_d11b1.dir/SIZEOF_OFF_T.c.o
+/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fPIE -MD -MT CMakeFiles/cmTC_d11b1.dir/SIZEOF_OFF_T.c.o -MF CMakeFiles/cmTC_d11b1.dir/SIZEOF_OFF_T.c.o.d -o CMakeFiles/cmTC_d11b1.dir/SIZEOF_OFF_T.c.o -c /Users/ryanwinstead/Projects/mujoco-2.3.3/build/CMakeFiles/CheckTypeSize/SIZEOF_OFF_T.c
+Linking C executable cmTC_d11b1.js
+/usr/local/Cellar/cmake/3.29.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d11b1.dir/link.txt --verbose=1
+/Users/ryanwinstead/Projects/emsdk/upstream/emscripten/emcc @CMakeFiles/cmTC_d11b1.dir/objects1.rsp -o cmTC_d11b1.js
+
+
+
